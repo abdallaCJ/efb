@@ -13,8 +13,35 @@ function generateSchedule(players) {
     return pairs.map(p => ({ p1: players[p[0]], p2: players[p[1]], s1: null, s2: null }));
 }
 
-let matchesG1 = generateSchedule(playersG1);
-let matchesG2 = generateSchedule(playersG2);
+let matchesG1 = [
+    { p1: "player1", p2: "player4", s1: 3,    s2: 1 },    // player1 won 3-1
+    { p1: "player2", p2: "player3", s1: 0,    s2: 0 },    // 0-0 Draw
+    { p1: "player1", p2: "player5", s1: null, s2: null }, // unplayed match
+    { p1: "player3", p2: "player4", s1: null, s2: null },
+    { p1: "player2", p2: "player5", s1: null, s2: null },
+    { p1: "player1", p2: "player3", s1: null, s2: null },
+    { p1: "player2", p2: "player4", s1: null, s2: null },
+    { p1: "player3", p2: "player5", s1: null, s2: null },
+    { p1: "player1", p2: "player2", s1: null, s2: null },
+    { p1: "player4", p2: "player5", s1: null, s2: null }
+];
+
+// Manually entered matches and scores for Group 2
+let matchesG2 = [
+    { p1: "player1", p2: "player4", s1: 4,    s2: 4 },    // player4 won 4-2
+    { p1: "player2", p2: "player3", s1: null, s2: null },
+    { p1: "player1", p2: "player5", s1: null, s2: null },
+    { p1: "player3", p2: "player4", s1: null, s2: null },
+    { p1: "player2", p2: "player5", s1: null, s2: null },
+    { p1: "player1", p2: "player3", s1: null, s2: null },
+    { p1: "player2", p2: "player4", s1: null, s2: null },
+    { p1: "player3", p2: "player5", s1: null, s2: null },
+    { p1: "player1", p2: "player2", s1: null, s2: null },
+    { p1: "player4", p2: "player5", s1: null, s2: null }
+];
+
+
+
 
 function updateTournament() {
     renderTable('table-g1', playersG1, matchesG1);
