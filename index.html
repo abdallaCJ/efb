@@ -291,7 +291,7 @@
     <script>
         // Replace these with your actual participant names
         const playersG1 = ["guduudow ", "muse", "qaloociye", "cj.ahmed", "shiine"];
-        const playersG2 = ["mohamed mj", "maan", "suunyo xiir", "delight", ""];
+        const playersG2 = ["mohamed mj", "maan", "suunyo xiir", "delight", "cabdi"];
 
         function generateSchedule(players) {
             const pairs = [
@@ -306,8 +306,8 @@
 
        // Manually entered matches and scores for Group 1
 let matchesG1 = [
-    { p1: "guduudow", p2: "cj.ahmed", s1: 3,    s2: 1 },    // player1 won 3-1
-    { p1: "muse", p2: "qaloociye", s1: 8,    s2: 0 },    // 0-0 Draw
+    { p1: "guduudow", p2: "cj.ahmed", s1: null,    s2: null },    // player1 won 3-1
+    { p1: "muse", p2: "qaloociye", s1: null,    s2: null },    // 0-0 Draw
     { p1: "guduudow", p2: "shiine", s1: null, s2: null }, // unplayed match
     { p1: "qaloociye", p2: "cj.ahmed", s1: null, s2: null },
     { p1: "muse", p2: "shiine", s1: null, s2: null },
@@ -320,16 +320,16 @@ let matchesG1 = [
 
 // Manually entered matches and scores for Group 2
 let matchesG2 = [
-    { p1: "player1", p2: "player4", s1: 4,    s2: 4 },    // player4 won 4-2
-    { p1: "player2", p2: "player3", s1: null, s2: null },
-    { p1: "player1", p2: "player5", s1: null, s2: null },
-    { p1: "player3", p2: "player4", s1: null, s2: null },
-    { p1: "player2", p2: "player5", s1: null, s2: null },
-    { p1: "player1", p2: "player3", s1: null, s2: null },
-    { p1: "player2", p2: "player4", s1: null, s2: null },
-    { p1: "player3", p2: "player5", s1: null, s2: null },
-    { p1: "player1", p2: "player2", s1: null, s2: null },
-    { p1: "player4", p2: "player5", s1: null, s2: null }
+    { p1: "mohamed mj", p2: "delight", s1: null,    s2: null },    // player4 won 4-2
+    { p1: "maan", p2: "suunyo xiir", s1: null, s2: null },
+    { p1: "mohamed mj", p2: "cabdi", s1: null, s2: null },
+    { p1: "suunyo xiir", p2: "delight", s1: null, s2: null },
+    { p1: "maan", p2: "cabdi", s1: null, s2: null },
+    { p1: "mohamed mj", p2: "suunyo xiir", s1: null, s2: null },
+    { p1: "maan", p2: "delight", s1: null, s2: null },
+    { p1: "suunyo xiir", p2: "cabdi", s1: null, s2: null },
+    { p1: "mohamed mj", p2: "maan", s1: null, s2: null },
+    { p1: "delight", p2: "cabdi", s1: null, s2: null }
 ];
 
 
